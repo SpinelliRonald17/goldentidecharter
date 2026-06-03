@@ -12,9 +12,15 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+     <link rel="stylesheet" href="css/estilo-video-js.css">
+    <script src="js/script-videos.js"></script>
+    <link rel="stylesheet" href="css/estilo_pag_videos.css">
+
 </head>
 
 <body>
@@ -33,6 +39,7 @@
       <li><a href="#experience">Experiencia</a></li>
       <li><a href="#contact">Contacto</a></li>
       <li><a href="#ubi">Lugar</a></li>
+      <li><a href="#move-content">Videos</a></li>
     </ul>
   </nav>
 
@@ -129,7 +136,7 @@
       </div>
 
       <div class="boat-card">
-        <img src="img/img2.jpeg">
+        <img src="img/img6.jpeg">
 
         <div class="boat-info">
           <h3>Jet Ski</h3>
@@ -189,6 +196,52 @@
 
   </section>
 
+
+  
+     
+      <div class="container-all section-title" id= "move-content">
+          
+                    <main>
+                      <br>
+                       <h2>Nuestros Recorridos</h2>
+                        <div class="contenedor">
+                           
+                            <div class="post"  category="laptops">
+                                <video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+                                    <source src="video/video1.mp4" type="video/mp4">
+                                </video>
+                                <br>
+                                <h4>Golden Tide Charter</h4>
+
+                                
+                            </div>
+
+                            <div class="post"  category="laptops">
+                                <video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+                                    <source src="video/video1.mp4" type="video/mp4">
+                                </video>
+                                <br>
+                               <h4>Golden Tide Charter</h4>
+
+                                
+
+                            </div>
+                            
+                            <div class="post" data-category="DIBUJOS">
+                                <video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+                                    <source src="video/video1.mp4" type="video/mp4">
+                                </video>
+                                <br>
+                                <h4>Golden Tide Charter</h4>
+
+                                
+
+                            </div>
+                           
+
+                    </main>
+   </div>
+
   <!-- CONTACT -->
 
   <section id="contact">
@@ -208,7 +261,7 @@
 
         <p>
            
-          <a href="https://maps.app.goo.gl/x4ieMGFAZkr8efY3A">📍 Puerto Portals, Mallorca</a>
+          <a href="https://maps.app.goo.gl/f5v1gF4PZVMGCsKZ7">📍 Puerto Portals, Mallorca</a>
           
         </p>
 
@@ -251,8 +304,7 @@
       
 
             <div class="ubicacion" id="ubi">
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6158.460868678338!2d2.476308703427412!3d39.486710994847456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129789cb7c2d8c63%3A0xdf78d123d581814d!2sPort%20Adriano!5e0!3m2!1ses!2ses!4v1779579900157!5m2!1ses!2ses" width="2000" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.594317635811!2d2.571035150633609!3d39.52938914872563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12978f74273dd205%3A0xa85552b47dd49098!2sPuerto%20Portals!5e0!3m2!1ses!2ses!4v1780515109544!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
         </div>
@@ -272,7 +324,6 @@
     <!-- Footer End -->
 
 
-
     <p>
       © 2025 Golden Tide Charter — Puerto Portals Mallorca
     </p>
@@ -290,7 +341,7 @@
             </a>
         </div>-->
 
-
+</div>
   <!--<a
     href="https://wa.me/34617764328"
     class="whatsapp"
@@ -304,11 +355,6 @@
    <button id="botonIrArriba" onclick="subirArriba()"><i class="fa fa-angle-double-up"></i></button>
 
   <script src="js/scripts.js"></script>
-    <script src="js/app.js"></script>
-
-
-
-
-    
+  <script src="js/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,280 @@
+
+/* Ajustes de barra para centarlos */
+.header-content{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+/* Nombre o logo dentro de la barra centrado */
+
+/* Color del nombre */
+
+
+
+
+
+/* menu de pagina responsive */
+#icon-menu{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    padding: 10px;
+    font-size: 20px;
+    background: white;
+    border-radius: 100%;
+    color: black;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#icon-menu i{
+    background: white;
+}
+
+#icon-menu:hover{
+   opacity: 0.8;
+}
+
+
+
+@keyframes icono {
+	from {
+		transform: rotate3d(0,0,0,0);
+	}
+	to {
+		transform: rotate3d(0,1,0, 360deg);
+	}
+}
+
+/* Estilo del footer pie de pagina del hr y h4 */
+.container-footer footer hr{
+    margin-top: 20px;
+    border: none;
+    height: 2px;
+    background: white;
+}
+
+.container-footer footer h4{
+    text-align: center;
+    margin-top: 40px;
+    color:white;
+    font-weight: 500px;
+    font-size: 18px;
+}
+
+
+/* Estilos CSS del Reproductor */
+
+main .contenedor {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    margin-top: 150px;
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    background:white;
+    z-index: 1;
+}
+
+main .contenedor .ctn-tag{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 16px;
+    margin-top: 10px;
+
+}
+
+main .contenedor .ctn-tag li{
+   list-style: none;
+   font-size: 14px;
+   margin: 4px;
+   padding: 3px 10px;
+   background: #e8e8e8;
+   cursor: default;
+   border-radius: 6px;
+}
+
+main .contenedor .post h4{
+    font-size: 18px;
+    margin-top: 2px;
+    padding: 0px 5px;
+    color: #686565;
+}
+
+.fm-video {
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,.5);
+}
+
+.fm-video .vjs-control-bar {
+	background: #F4F4F4;
+	color: black;
+}
+
+.fm-video .vjs-play-progress,
+.fm-video .vjs-volume-level {
+    background: black;
+}
+
+.fm-video .vjs-slider {
+	background:white;
+}
+
+.video-js:hover .vjs-big-play-button {
+	background: rgba(0,0,0,.2);
+}
+
+.fm-video .vjs-big-play-button {
+	background: rgba(138, 135, 135, 0.2);
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	border-radius: 50%;
+	border:none;
+}
+
+.fm-video .vjs-big-play-button:hover {
+	background: rgba(0,0,0,.5);
+}
+
+
+/* Responsive Desing-  adaptable a dispositivos mobiles */
+
+/* Responsive menu , articulos y pie de pagina */
+@media screen and (max-width: 1220px){
+    .header-content,
+    .container-content,
+    .container-footer footer{
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+
+    #ctn-bars-search,
+    #ctn-bars-search input,
+    #box-search{
+        width: 100%;
+    }
+}
+
+/* Responsive articulos y aside en bloques */
+@media screen and (max-width: 1020px){
+    .container-content{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    article{
+        box-shadow: 0 0 0 0;
+    }
+
+    .container-aside{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-aside aside{
+        max-width: 300px;
+        margin: 10px;
+    }
+}
+
+/* Responsive completo pequeño  */
+
+@media screen and (max-width: 800px){
+
+    body{
+       overflow-x: hidden;
+    }
+
+    .container-all{
+        transition: all 300ms cubic-bezier(1,0,0,1);
+    }
+
+    .move-container-all{
+        transform: translatex(300px);
+    }
+
+    .menu{
+        width:0px;
+        height: 100vh;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        background: black;
+        overflow: hidden;
+        transform: translateX(-350px);
+        box-shadow: 10px 0 20px -25px black;
+        transition: all 300ms cubic-bezier(1,0,0,1);
+    
+    }
+
+    main .contenedor {
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        margin-top: 150px;
+        padding: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    .show-lateral-menu{
+        width: 200px;
+        transform: translateX(0px);
+    }
+
+    .menu nav ul{
+        flex-direction: column;
+    }
+
+    .menu nav ul li{
+        max-width: 200px;
+        height: 50px;
+        justify-content: flex-start;
+    }
+
+    .menu nav ul div img{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .menu-seleted:before{
+        width: 0;
+    }
+
+    .menu nav ul li a{
+        margin-top: 40px;
+        color: #dad4d4;
+    }
+
+    .menu nav ul li a i{
+        width: 20px;
+        display: inline-block;
+        margin-right: 10px;
+        color: white;
+    }
+
+    #icon-menu{
+        display: flex;
+        right: 50px;
+    }
+
+    .container-aside{
+        flex-wrap: wrap;
+    }
+
+}
