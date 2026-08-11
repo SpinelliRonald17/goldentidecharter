@@ -1,0 +1,121 @@
+.payment-container {
+            max-width: 800px;
+            width: 100%;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        h2 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+
+        .payment-section {
+            margin-bottom: 25px;
+        }
+
+        .payment-section h3 {
+            font-size: 1.1rem;
+            color: #64748b;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+
+        .grid-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 15px;
+        }
+
+        .method-card {
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+        }
+
+        .method-card:hover {
+            border-color: #3b82f6;
+            background-color: #f0f7ff;
+            transform: translateY(-2px);
+        }
+
+        /* Estilos para los inputs de radio ocultos */
+        .method-card input[type="radio"] {
+            display: none;
+        }
+
+        /* Estado seleccionado */
+        .method-card input[type="radio"]:checked + .card-content {
+            color: #3b82f6;
+        }
+        
+        .method-card:has(input[type="radio"]:checked) {
+            border-color: #3b82f6;
+            background-color: #f0f7ff;
+            box-shadow: 0 0 0 1px #3b82f6;
+        }
+
+        .card-content i {
+            font-size: 2rem;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .card-content span {
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: block;
+        }
+
+        /* Colores personalizados para marcas */
+        .fa-cc-visa { color: #1a1f71; }
+        .fa-cc-mastercard { color: #eb001b; }
+        .fa-cc-amex { color: #016fd0; }
+        .fa-paypal { color: #003087; }
+        
+        /* Textos personalizados para los que no tienen icono oficial */
+        .custom-icon {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 1.5rem !important;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .bizum-color { color: #00bef0; }
+        .zelle-color { color: #7414ca; }
+        .fa-bank { color: #475569; }
+        .fa-money-bill-wave { color: #16a34a; }
+
+        .btn-submit {
+            display: block;
+            width: 100%;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 8px;
+            margin-top: 30px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .btn-submit:hover {
+            background-color: #1d4ed8;
+        }

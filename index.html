@@ -10,6 +10,16 @@
   <link href="img/img4.ico" rel="icon">
   <title>Golden Tide Charter</title>
 
+  <!-- === INICIO INTEGRACIÓN PWA === -->
+  <link rel="manifest" href="./manifest.json">
+  <!-- Define el color de la barra del navegador (puedes ajustarlo al dorado o negro de tu marca) -->
+  <meta name="theme-color" content="#000000">
+  <!-- Icono para dispositivos Apple -->
+  <link rel="apple-touch-icon" href="img/img4.ico">
+  <!-- === FIN INTEGRACIÓN PWA === -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -18,10 +28,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <link href="css/style.css" rel="stylesheet">
-
-     <link rel="stylesheet" href="css/estilo-video-js.css">
+    <link href="css/pagos.css" rel="stylesheet">
+    <link href="css/galeria.css" rel="stylesheet">
+    <link href="css/vistas.css" rel="stylesheet">
+    <link href="css/enviar.css" rel="stylesheet">
+    <link href="css/estilo-video-js.css" rel="stylesheet" >
+    <link href="css/estilo_pag_videos.css" rel="stylesheet">
+    
     <script src="js/script-videos.js"></script>
-    <link rel="stylesheet" href="css/estilo_pag_videos.css">
+    
 
 </head>
 
@@ -41,7 +56,7 @@
       <li><a href="#experience">Experiencia</a></li>
       <li><a href="#contact">Contacto</a></li>
       <li><a href="#ubi">Lugar</a></li>
-      <li><a href="#move-content">Videos</a></li>
+      <li><a href="#move-content">Galeria</a></li>
     </ul>
   </nav>
 
@@ -56,6 +71,9 @@
 
 
       <h1>
+      
+        <br>
+        <br>
         Discover Mallorca <br>
         <span>From The Sea</span>
       </h1>
@@ -70,9 +88,9 @@
           <button class="btn gold">Reservar Ahora</button>
         </a>
 
-        <!--<a href="https://wa.me/34617764328" target="_blank">
+        <a href="https://wa.me/34617764328" target="_blank">
           <button class="btn outline"> <i class="fa-brands fa-whatsapp"> WhatsApp</i></button>
-        </a>-->
+        </a>
 
      
            <a href="https://www.instagram.com/goldentidecharter?igsh=MWRzdDk5NDZwdmxiMQ==">
@@ -97,6 +115,10 @@
   <section id="fleet">
 
     <div class="section-title">
+      <br>
+      <br>
+      <br>
+     
       <h2>Nuestra Flota</h2>
       <p>
         Explora Mallorca con nuestras embarcaciones modernas y experiencias premium.
@@ -273,6 +295,8 @@
                                 
                             </div>
 
+                            
+
                             <!--<div class="post"  category="laptops">
                                 <video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
                                     <source src="video/video1.mp4" type="video/mp4">
@@ -299,6 +323,68 @@
                     </main>
    </div>
 
+
+
+<div class="grid-gallery">
+    <a class="grid-gallery__item" href="#">
+        <img class="grid-gallery__image" src="img/clientes/01.jpeg">
+    </a>
+    <a class="grid-gallery__item" href="#">
+        <img class="grid-gallery__image" src="img/clientes/02.jpeg">
+    </a>
+
+    <a class="grid-gallery__item" href="#">
+        <img class="grid-gallery__image" src="img/clientes/03.jpeg">
+    </a>
+    <a class="grid-gallery__item" href="#">
+        <img class="grid-gallery__image" src="img/clientes/04.jpeg">
+    </a>
+
+    <a class="grid-gallery__item" href="#">
+        <img class="grid-gallery__image" src="img/clientes/05.jpeg">
+    </a>
+    <a class="grid-gallery__item" href="#">
+        <img class="grid-gallery__image" src="img/clientes/06.jpeg">
+    </a>
+
+    <a class="grid-gallery__item" href="#">
+        <img class="grid-gallery__image" src="img/clientes/07.jpeg">
+    </a>
+    <a class="grid-gallery__item" href="#">
+        <img class="grid-gallery__image" src="img/clientes/08.jpeg">
+    </a>
+
+    <a class="grid-gallery__item" href="#">
+        <img class="grid-gallery__image" src="img/clientes/09.jpeg">
+    </a>
+    <a class="grid-gallery__item" href="#">
+        <img class="grid-gallery__image" src="img/clientes/10.jpeg">
+    </a>
+
+    <a class="grid-gallery__item" href="#">
+        <img class="grid-gallery__image" src="img/clientes/01.jpeg">
+    </a>
+    <a class="grid-gallery__item" href="#">
+        <img class="grid-gallery__image" src="img/clientes/11.jpeg">
+    </a>
+
+    <a class="grid-gallery__item" href="#">
+        <img class="grid-gallery__image" src="img/clientes/13.jpeg">
+    </a>
+    <a class="grid-gallery__item" href="#">
+        <img class="grid-gallery__image" src="img/clientes/14.jpeg">
+    </a>
+
+    <a class="grid-gallery__item" href="#">
+        <img class="grid-gallery__image" src="img/clientes/15.jpeg">
+    </a>
+    <a class="grid-gallery__item" href="#">
+        <img class="grid-gallery__image" src="img/clientes/16.jpeg">
+    </a>
+     
+
+</div>
+
   <!-- CONTACT -->
 
   <section id="contact">
@@ -318,7 +404,7 @@
 
         <p>
            
-          <a href="https://maps.app.goo.gl/f5v1gF4PZVMGCsKZ7">📍 Puerto Portals, Mallorca</a>
+          <a href="https://maps.app.goo.gl/aigDCNzaHFthrZPh7">📍 Puerto Portals, Mallorca</a>
           
         </p>
 
@@ -368,10 +454,10 @@
       </div>
 
       
-        <a class="btn gold" href="mailto:hhghost20@gmail.com?subject=solicitud&body=Hola%20más%20información%20sobre...">
+        <a class="btn gold" href="mailto:info@goldentidecharter.com?subject=solicitud&body=Hola%20más%20información%20sobre...">
          
 
-          Solicitar Reserva
+         Reserva desde tu Email
         </a>
 
       </form>
@@ -380,6 +466,44 @@
 
   </section>
 
+ 
+     <div class="section-title">
+      <h2>Reservas Emails Web</h2>
+    </div>
+
+  <div class="widget-contacto" id="widgetContacto">
+        <button class="btn-desplegar" id="btnToggle" aria-expanded="false" aria-controls="formularioContenedor">
+            <span>¿Tienes dudas? Escríbenos</span>
+            <span class="icono">▼</span>
+        </button>
+
+        <div class="contenedor-formulario" id="formularioContenedor">
+            <form class="formulario-contacto" action="enviar.php" method="POST">
+                <div class="grupo-campo">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="mensaje">Mensaje o consulta</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+            </form>
+        </div>
+    </div>
+
+
+     <br>
+      <br>
+      <br>
+      <br>
   <!-- FOOTER -->
 
   <footer>
@@ -388,8 +512,8 @@
       
 
             <div class="ubicacion" id="ubi">
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.594317635811!2d2.571035150633609!3d39.52938914872563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12978f74273dd205%3A0xa85552b47dd49098!2sPuerto%20Portals!5e0!3m2!1ses!2ses!4v1780515109544!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3077.338846681579!2d2.5628912772720827!3d39.52940937159587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12978f003ab8841b%3A0x2f3b194209f255f!2sGoldentidecharter!5e0!3m2!1ses!2ses!4v1782204184535!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+             </iframe>
 
         </div>
     </div>
@@ -408,6 +532,112 @@
     <!-- Footer End -->
 
 
+
+
+    <div class="payment-container section-title"> 
+    <h2>Medio de Pago Aceptados</h2>
+    
+    <form action="/procesar-pago" method="POST">
+        
+        <div class="payment-section">
+            <h3>Tarjetas de Crédito / Débito</h3>
+            <div class="grid-methods">
+                <label class="method-card">
+                    <input type="radio" name="payment_method" value="visa" required>
+                    <div class="card-content">
+                        <i class="fab fa-cc-visa"></i>
+                        <span>Visa</span>
+                    </div>
+                </label>
+                
+                <label class="method-card">
+                    <input type="radio" name="payment_method" value="mastercard">
+                    <div class="card-content">
+                        <i class="fab fa-cc-mastercard"></i>
+                        <span>Mastercard</span>
+                    </div>
+                </label>
+                
+                <label class="method-card">
+                    <input type="radio" name="payment_method" value="amex">
+                    <div class="card-content">
+                        <i class="fab fa-cc-amex"></i>
+                        <span>Amex</span>
+                    </div>
+                </label>
+            </div>
+        </div>
+
+        <div class="payment-section">
+            <h3>Pagos Digitales y Móviles</h3>
+            <div class="grid-methods">
+                <label class="method-card">
+                    <input type="radio" name="payment_method" value="paypal">
+                    <div class="card-content">
+                        <i class="fab fa-paypal"></i>
+                        <span>PayPal</span>
+                    </div>
+                </label>
+                
+                <label class="method-card">
+                    <input type="radio" name="payment_method" value="bizum">
+                    <div class="card-content">
+                        <em class="custom-icon bizum-color">b!</em>
+                        <span>Bizum</span>
+                    </div>
+                </label>
+                
+                <label class="method-card">
+                    <input type="radio" name="payment_method" value="zelle">
+                    <div class="card-content">
+                        <em class="custom-icon zelle-color">zelle</em>
+                        <span>Zelle</span>
+                    </div>
+                </label>
+            </div>
+        </div>
+
+        <div class="payment-section">
+            <h3>Otros Medios de Pago</h3>
+            <div class="grid-methods">
+                <label class="method-card">
+                    <input type="radio" name="payment_method" value="transferencia">
+                    <div class="card-content">
+                        <i class="transparent-icon fas fa-bank"></i>
+                        <span>Transferencia</span>
+                    </div>
+                </label>
+                
+                <label class="method-card">
+                    <input type="radio" name="payment_method" value="efectivo">
+                    <div class="card-content">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>Efectivo</span>
+                    </div>
+                </label>
+            </div>
+        </div>
+
+        <!--<button type="submit" class="btn-submit">Confirmar Método de Pago</button>
+    </form>-->
+</div>
+
+
+
+<div class="counter-box">
+        <div class="status-container">
+            <span class="live-dot"></span>
+            <span class="status-text">En Vivo</span>
+        </div>
+        
+        <div id="visitor-counter" class="counter-display"> 40 </div>
+        
+        <div class="counter-label">Personas visualizando esta página ahora</div>
+    </div>
+
+<br>
+<br>
+
     <p>
       © 2025 Golden Tide Charter — Puerto Portals Mallorca
     </p>
@@ -418,7 +648,7 @@
 
   <!-- WHATSAPP -->
 
-  <div class="container-redes" id="redes">
+  <!--<div class="container-redes" id="redes">
             <a href="https://api.whatsapp.com/send?phone=34617764328&text=¿Cómo son los servicios que ofreces?" target="_blank">
                 <img src="img/icon/icon-whatsapp.png" title="Enviar mensaje de WhatsApp" alt=""> 
             </a>
@@ -436,13 +666,36 @@
     💬
   </a>-->
 
-  
-    <!-- Back to Top -->
-   <button id="botonIrArriba" onclick="subirArriba()"><i class="fa fa-angle-double-up"></i></button>
+
+   <!-- Back to Top -->
+  <button id="botonIrArriba" onclick="subirArriba()"><i class="fa fa-angle-double-up"></i></button>
 
   <script src="js/scripts.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/vistaspg.js"></script>
+  <script src="js/enviarE.js"></script>
+  <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
 
+  <!-- === INICIO REGISTRO SERVICE WORKER PWA === -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('./sw.js')
+          .then(function(registration) {
+            console.log('ServiceWorker registrado con éxito. Scope:', registration.scope);
+          })
+          .catch(function(error) {
+            console.log('Fallo en el registro del ServiceWorker:', error);
+          });
+      });
+    }
+  </script>
+  <!-- === FIN REGISTRO SERVICE WORKER PWA === -->
+
+  <script src="js/scripts.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/vistaspg.js"></script>
+  <script src="js/enviarE.js"></script>
   <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
 
 </body>

@@ -1,0 +1,78 @@
+/* Contenedor Principal */
+        .counter-box {
+            background-color: var(--panel-bg);
+            padding: 30px 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            border: 1px solid #334155;
+        }
+
+        /* Encabezado con el punto "En Vivo" */
+        .status-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .live-dot {
+            width: 10px;
+            height: 10px;
+            background-color: var(--accent-green);
+            border-radius: 50%;
+            display: inline-block;
+            animation: pulse 1.5s infinite;
+        }
+
+        .status-text {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+            color: #94a3b8;
+        }
+
+        /* Estilo del Número */
+        .counter-display {
+            font-family: 'Courier New', Courier, monospace; /* Tipografía monoespaciada para evitar que el contenedor tiemble */
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--text-light);
+            background-color: #020617;
+            padding: 10px 25px;
+            border-radius: 8px;
+            letter-spacing: 4px;
+            display: inline-block;
+            border: 1px solid #475569;
+            transition: transform 0.1s ease-in-out;
+        }
+
+        /* Pequeña animación cuando cambia el número */
+        .bump {
+            transform: scale(1.03);
+            color: var(--accent-green);
+        }
+
+        .counter-label {
+            margin-top: 15px;
+            font-size: 0.95rem;
+            color: #94a3b8;
+        }
+
+        /* Animación de pulso para el indicador EN VIVO */
+        @keyframes pulse {
+            0% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+            }
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+            }
+            100% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+            }
+        }
